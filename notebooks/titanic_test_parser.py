@@ -45,3 +45,4 @@ train["Age"] = train["Age"].fillna(train["Title"].map(title_age_dict))
 train[num_features + cat_features + [TARGET_NAME]].info()
 
 test["Age"] = test["Age"].fillna(test["Title"].map(title_age_dict))
+test[num_features + cat_features].info()
